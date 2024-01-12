@@ -1,0 +1,47 @@
+/* VideoPlayer.css */
+.video-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timestamp-container {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+  }
+  
+  .timestamp-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Existing styles for video player and timestamps... */
+
+.timestamp-popup {
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    left: 50px; /* Adjust the left position as needed */
+    width: 300px; /* Set the initial width */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+  
+  
+  
+  

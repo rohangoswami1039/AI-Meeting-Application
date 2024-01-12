@@ -1,0 +1,222 @@
+.component_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  position: relative; /* Add relative positioning */
+}
+
+.bot_message{
+    margin: 10px;
+    background-color: #dedede;
+    color: #000000;
+    padding: 20px;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 800px;
+}
+.User_message{
+    margin: 10px;
+    background-color: #0a6ebd;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 800px;
+    align-self: flex-end;
+}
+.messages_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(90vh - 0px); /* Adjusted for the input container's height */
+    overflow-y: auto;
+}
+.input_container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the input container horizontally */
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.input_text {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 14px;
+  outline: #0a6ebd
+}
+
+.send_button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0a6ebd;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send_button:hover {
+  background-color: #0a6ebd;
+}
+.mic{
+  margin-right: 10px;
+}
+
+
+.messages_container::-webkit-scrollbar {
+  width: 4px;
+  
+}
+
+.messages_container::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.messages_container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.messages_container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.messages_container::-webkit-scrollbar-button {
+    display: none;
+    border-radius: 15px;
+}
+
+/*Room discussion buttons*/
+.room_discussion_button{
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25) ;
+}
+.room_discussion_button {
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #0a6ebd;
+  border-radius: 20px;
+  color: #fff;
+  padding: 2px 2px;
+  cursor: pointer;
+  z-index: 1; /* Place the button above the chat area */
+  width: fit-content;
+  bottom: 80px; /* Adjust as needed */
+  transition: background-color   2s ease;
+}
+.room_discussion_button:hover{
+  background-color: #f44336;
+}
+.room_discussion_button p {
+  position: relative; 
+  margin: 10px;
+}
+.room_discussion_button:hover{
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  bottom: 80px; 
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25) ;
+  z-index: 1000;
+}
+.popup div {
+  margin-top: 20px;
+}
+/* Room Meeting Video Buttons*/
+.room_meeting_video_button{
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25) ;
+}
+.room_meeting_video_button {
+  position: absolute;
+  left: 10%;
+  margin-left: 20px;
+  transform: translateX(-50%);
+  background-color: #0a6ebd;
+  border-radius: 20px;
+  color: #fff;
+  padding: 2px 2px;
+  cursor: pointer;
+  z-index: 1; /* Place the button above the chat area */
+  width: fit-content;
+  bottom: 80px; /* Adjust as needed */
+  transition: background-color   2s ease;
+}
+
+.room_meeting_video_button p {
+  position: relative; 
+  margin: 10px;
+}
+.room_meeting_video_button:hover{
+  cursor: pointer;
+}
+
+.popup_room_meeting_video_ {
+  position: absolute;
+  bottom: 80px; 
+  left: 20%;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25) ;
+  z-index: 1000;
+}
+.popup_room_meeting_video_ div {
+  margin-top: 20px;
+}
+
+
+
+.close_button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+
+
+.room_meeting_video_button {
+  cursor: pointer;
+  transition: transform 0.2s; /* Add a smooth transition */
+}
+
+.upload-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+.button-text {
+  display: none;
+}
+
+.room_meeting_video_button:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+}
+
+.room_meeting_video_button:hover .upload-icon {
+  display: none; /* Hide the upload icon on hover */
+}
+
+.room_meeting_video_button:hover .button-text {
+  display: block; /* Show the button text on hover */
+}

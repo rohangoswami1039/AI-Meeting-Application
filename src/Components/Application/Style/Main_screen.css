@@ -1,0 +1,127 @@
+
+/* In your custom CSS file */
+
+/* Reset margin for all elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+  }
+  
+  /* If you want to remove margin from specific elements */
+  /* For example, if you want to remove margin from containers */
+  .container, .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* If you want to remove margin from all columns */
+  /* For example, if you want columns to touch the edges of their parent */
+  [class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* If you want to remove margin from specific columns */
+  /* For example, if you only want to remove margin from columns with a specific class */
+  .custom-column-class {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .icons_container-top{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 2%;
+  }
+  .icon{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .icon:hover{
+    background-color: #131e45;
+    border-radius: 15px;
+  }
+  .icons-container-bottom{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle-button {
+    position: relative;
+    top:2px;
+    left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  /* Add transition properties for smooth animation */
+  .Nav {
+    transition: width 0.3s ease-in-out;
+    width: 70px;
+    overflow: hidden;
+  }
+  
+  /* Set width to 0 to close the navigation */
+  .Nav.hide {
+    width: 0;
+  }
+  .recents{
+    width:'70px';
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .recent_div{
+    height: 100vh;
+  }
+  .search_pannel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .search_icon {
+    position: relative;
+    left: 10px;
+    top:5px;
+  }
+  .Search_input{
+    position: relative;
+    margin-top: 5px;
+    width: 80%;
+    border-radius: 25px;
+    margin-right: 10px;
+    background-color: #1F1D1D;
+    color: #fff;
+    border:none 
+  }
+  .Search_input::placeholder{
+    padding-left: 10px;
+    color: #fff;
+  }
+  .scroll-container::-webkit-scrollbar {
+      width: 5px;
+      
+    }
+    
+  .scroll-container::-webkit-scrollbar-track {
+      background: #BBBBBB;
+    }
+  .scroll-container::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  .scroll-container::-webkit-scrollbar-button {
+        display: none;
+        border-radius: 15px;
+    }
